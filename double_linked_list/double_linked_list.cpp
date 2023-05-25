@@ -31,5 +31,14 @@ DoubleLinkedList::DoubleLinkedList() {
 }
 
 void DoubleLinkedList::addNode() {
-
+	int nim;
+	string nm;
+	cout << "\nENter the roll number of the student: ";
+	cin >> nim;
+	cout << "\nEnter the name of the student: ";
+	cin.ignore();
+	getline(cin, nm);
+	Node* newNode = new Node();
+	newNode->noMhs = nim;
+	newNode->name = nm;
 }
